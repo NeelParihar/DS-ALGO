@@ -3,9 +3,6 @@
 
 using namespace std;
 
-// Create an Array of size 10 of integers. Take input from the user for these
-// 10 elements and print the entire array after that.
-
 int main()
 {
     int arr[10],mn=INT_MAX,mx=INT_MIN;
