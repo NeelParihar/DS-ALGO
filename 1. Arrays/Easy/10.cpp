@@ -1,6 +1,6 @@
 // 10) Move all the negative elements to one side of the array.
 #include<iostream>
-
+#include<algorithm>
 using namespace std;
 
 int main()
@@ -13,17 +13,15 @@ int main()
         cin>>arr[i];
     }
 
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        {
-            if(arr[i]<0&&arr[j]>0)
-            {
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-            }
-        }
+    
+    int i = -1; 
+    for (int j = 0; j < n; j++) 
+    { 
+        if (arr[j] < 0) 
+        { 
+            i++; 
+            swap(arr[i],arr[j]); 
+        } 
     }
     for (int i = 0; i < n; i++)
     {
