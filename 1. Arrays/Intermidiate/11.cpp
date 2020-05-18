@@ -30,8 +30,7 @@ void rearrange(int arr[], int n)
     // 2 and positive index by 1, 
     // i.e., swap every alternate negative  
     // number with next positive number 
-    while (pos < n && neg < pos &&  
-                     arr[neg] < 0) 
+    while (pos < n && neg < pos &&  arr[neg] < 0) 
     { 
         swap(arr[neg],arr[pos]); 
         pos++; 
